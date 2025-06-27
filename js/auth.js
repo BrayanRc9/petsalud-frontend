@@ -1,4 +1,3 @@
-// js/auth.js
 const BASE_URL = 'https://petsalud-backend.onrender.com/api';
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -64,3 +63,12 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   });
 });
+
+async function agendarCita(data) {
+  const res = await fetch(`${BASE_URL}/citas`, {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify(data)
+  });
+  return await res.json();
+}

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Panel Administrativo - PetSalud</title>
+    <link rel="stylesheet" href="css/styles.css">
+  
+</head>
+<body>
+    <header>
+    <a href="index.html">
+            <img src="IMG/1PETSALUD-LOGO.png" alt="PetSalud" />
+            </a>
+    <h2>Administración de PetSalud</h2>
+    </header>
+    
+  <main class="admin-panel">
+    <section>
+      <h2>Crear Usuario Médico/Admin</h2>
+      <form id="form-usuario">
+        <input type="text" id="nombre" placeholder="Nombre completo" required>
+        <input type="email" id="email" placeholder="Correo" required>
+        <input type="password" id="password" placeholder="Contraseña" required>
+        <select id="rol" required>
+          <option value="">Selecciona Rol</option>
+          <option value="medico">Médico</option>
+          <option value="admin">Administrador</option>
+        </select>
+        <button type="submit">Crear Usuario</button>
+      </form>
+    </section>
+
+    </main>
+
+    <script defer src="js/admin.js"></script>
+    <footer>
+        <p>&copy; 2025. Todos los derechos reservados. <strong>Gustavo Duarte - Brayan Ruano</strong></p>        
+    </footer>
+</body>
+</html>
