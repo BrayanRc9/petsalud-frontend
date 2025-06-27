@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <title>Login Cliente</title>
+        <link rel="stylesheet" href="/frontend/css/styles.css" />
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
+    </head>
+    <body>
+        <header>
+            <a href="index.html">
+            <img src="IMG/1PETSALUD-LOGO.png" alt="PetSalud" />
+            </a>
+        </header>
+
+        <main>
+            <div class="login-container">
+            <div class="acciones" style="justify-content: center;">
+                <button id="btn-login">Iniciar Sesión</button>
+                <button id="btn-register">Registrarse</button>
+            </div>
+
+            <!-- FORMULARIO DE LOGIN -->
+            <form id="form-login">
+                <h1>Ingreso de Usuario</h1>
+                <input type="text" name="email" placeholder="Correo o Usuario" required />
+                <input type="password" name="password" placeholder="Contraseña" required />
+                <button type="submit">Ingresar</button>
+            </form>
+
+            <!-- FORMULARIO DE REGISTRO -->
+            <form id="form-register" style="display: none;">
+                <h1>Registro de Usuario</h1>
+                <input type="text" name="nombre" placeholder="Nombre completo" required />
+                <input type="text" name="email" placeholder="Correo o usuario" required />
+                <input type="password" name="password" placeholder="Contraseña" required />
+                <button type="submit">Crear cuenta</button>
+            </form>
+            </div>
+        </main>
+
+        <script defer src="js/auth.js"></script>
+    <footer>
+        <p>&copy; 2025. Todos los derechos reservados. <strong>Gustavo Duarte - Brayan Ruano</strong></p>        
+    </footer>
+       
+    </body>
+</html>

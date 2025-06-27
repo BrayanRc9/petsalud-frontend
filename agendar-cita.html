@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agendar-Cita</title>
+    <link rel="stylesheet" href="/frontend/css/styles.css">
+</head>
+<body>
+    <header>
+         <a href="index.html">
+            <img src="IMG/1PETSALUD-LOGO.png" alt="" height="60">
+        </a>
+        
+    </header>
+  <main>
+    <div class="card">
+      <h3>Agendar nueva cita</h3>
+      <form id="form-cita">
+        <label for="mascotas">Mascota:</label>
+        <select name="mascotas" id="mascotas">
+          <option value="Mascota 1">Mascota 1</option>
+          <option value="Mascota 2">Mascota 2</option>
+          <option value="Mascota 3">Mascota 3</option>
+        </select>
+
+        <label for="FechaCita">Fecha de la cita:</label>
+        <input type="date" name="FechaCita" id="FechaCita" required>
+
+        <label for="Sucursal">Sucursal:</label>
+        <select name="Sucursal" id="Sucursal">
+          <option value="Veterinaria 1">Veterinaria 1</option>
+          <option value="Veterinaria 2">Veterinaria 2</option>
+          <option value="Veterinaria 3">Veterinaria 3</option>
+        </select>
+
+        <button type="submit">Agendar Cita</button>
+      </form>
+    </div>
+
+    <div class="card">
+      <h3>Citas Agendadas</h3>
+      <table id="tabla-citas">
+        <thead>
+          <tr>
+            <th>Mascota</th>
+            <th>Fecha</th>
+            <th>Sucursal</th>
+          </tr>
+        </thead>
+        <tbody>
+          
+        </tbody>
+      </table>
+    </div>
+  </main>
+  <script defer src="js/auth.js"></script>
+    <footer>
+      <p>&copy; 2025. Todos los derechos reservados. <strong>Gustavo Duarte - Brayan Ruano</strong></p>        
+    </footer>
+</body>
+</html>

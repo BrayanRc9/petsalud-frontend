@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Dashboard Médico</title>
+  <link rel="stylesheet" href="/frontend/css/styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <!-- <script src="https://kit.fontawesome.com/3ccf5e6ea0.js" crossorigin="anonymous"></script>
+</head> -->
+<body>
+  <header>
+    <a href="index.html">
+            <img src="IMG/1PETSALUD-LOGO.png" alt="PetSalud" />
+            </a>
+    <h2>Bienvenido al Panel Médico</h2>
+    <p>Gestione historias clínicas, inventario y citas</p>
+  </header>
+
+  <main>
+    <div class="card-grid">
+      <a href="crearhistoriaclinica.html" class="card">
+        <i class="fas fa-notes-medical"></i>
+        <h3>Historia Clínica</h3>
+        <p>Crear y consultar historiales de pacientes</p>
+      </a>
+
+      <a href="inventario.html" class="card">
+        <i class="fas fa-boxes"></i>
+        <h3>Inventario</h3>
+        <p>Monitorear insumos médicos</p>
+      </a>
+
+      <a href="agendar-cita.html" class="card">
+        <i class="fas fa-calendar-check"></i>
+        <h3>Citas</h3>
+        <p>Visualizar y gestionar citas programadas</p>
+      </a>
+    </div>
+  </main>
+  <script defer src="js/auth.js"></script>
+
+  <footer>
+    <p>&copy; 2025. Todos los derechos reservados. <strong>Gustavo Duarte - Brayan Ruano</strong></p>        
+  </footer>
+</body>
+</html>

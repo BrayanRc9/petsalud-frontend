@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Perfil de Usuario</title>
+  <link rel="stylesheet" href="/frontend/css/styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/3ccf5e6ea0.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <header>
+    <a href="index.html">
+      <img src="IMG/1PETSALUD-LOGO.png" alt="PetSalud" />
+    </a>
+    <h2><i class="fas fa-paw"></i> Bienvenido</h2>
+    <p>Visualiza la información de tus mascotas</p>
+  </header>
+
+  <main>
+    <div class="card">
+      <label for="selector-mascota">Selecciona una mascota:</label>
+      <select id="selector-mascota" onchange="mostrarMascota()">
+        <option value="mascota1">Mascota 1</option>
+        <option value="mascota2">Mascota 2</option>
+        <option value="mascota3">Mascota 3</option>
+      </select>
+    </div>
+
+    <div id="info-mascota" class="card">
+      <img id="foto-mascota" src="IMG/Mascota1.png" alt="Mascota">
+      <table>
+        <tr><th>Nombre</th><td id="nombre">Mascota 1</td></tr>
+        <tr><th>Raza</th><td id="raza">Corgui</td></tr>
+        <tr><th>Edad</th><td id="edad">5 años</td></tr>
+        <tr><th>ID</th><td id="id">00123</td></tr>
+        <tr>
+          <th>Historia Clínica</th>
+          <td><a href="historiaclinica.html" class="descargar"><i class="fas fa-file-pdf"></i> Descargar PDF</a></td>
+        </tr>
+      </table>
+      <div class="acciones">
+        <a href="historiaclinica.html"><i class="fas fa-file-medical"></i> Ver Historia</a>
+        <a href="agendar-cita.html"><i class="fas fa-calendar-plus"></i> Agendar Cita</a>
+      </div>
+    </div>
+  </main>
+  <script defer src="js/auth.js"></script>
+
+  <footer>
+    <p>&copy; 2025. Todos los derechos reservados. <strong>Gustavo Duarte - Brayan Ruano</strong></p>        
+  </footer>
+ 
+</body>
+</html>

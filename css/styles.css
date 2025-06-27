@@ -1,0 +1,408 @@
+/* ------------------ FUENTES ------------------ */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(to bottom right, #f4fcfa, #e8f8f7);
+  color: #2d2d2d;
+  line-height: 1.6;
+  min-height: 100vh;
+}
+
+/* ------------------ ANIMACIONES ------------------ */
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* ------------------ ENCABEZADO ------------------ */
+header {
+  background-color: #3ec4b5;
+  color: white;
+  text-align: center;
+  padding: 20px 10px;
+  border-bottom: 4px solid #2aa89f;
+  animation: fadeInUp 0.6s ease;
+}
+header img {
+  height: 60px;
+  transition: transform 0.3s ease-in-out;
+}
+header img:hover {
+  transform: scale(1.08);
+}
+
+/* ------------------ NAVEGACIÓN ------------------ */
+nav {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  background-color: #264653;
+  padding: 15px 10px;
+}
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+  padding: 10px 18px;
+  background-color: #3ec4b5;
+  border-radius: 8px;
+  transition: background 0.3s ease, transform 0.2s;
+}
+nav a:hover {
+  background-color: #2aa89f;
+  transform: translateY(-2px);
+}
+
+/* ------------------ CONTENIDO GENERAL ------------------ */
+main, section {
+  max-width: 1000px;
+  margin: 30px auto;
+  padding: 30px;
+  border-radius: 16px;
+  animation: fadeInUp 0.6s ease;
+}
+
+/* ------------------ FORMULARIOS ------------------ */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+input, select, textarea {
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  font-size: 1rem;
+  transition: border 0.3s ease;
+}
+input:focus, select:focus, textarea:focus {
+  border-color: #3ec4b5;
+  box-shadow: 0 0 5px #3ec4b5;
+  outline: none;
+}
+button {
+  background-color: #2a9d8f;
+  color: white;
+  border: none;
+  padding: 12px;
+  font-size: 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s;
+}
+button:hover {
+  background-color: #21867a;
+  transform: scale(1.05);
+}
+
+/* ------------------ LOGIN PERSONALIZADO ------------------ */
+.login-container {
+  background-color: white;
+  max-width: 420px;
+  margin: 2px auto;
+  padding: 40px 30px;
+  border-radius: 20px;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.1);
+  animation: fadeInUp 0.8s ease;
+  text-align: center;
+}
+.login-container h1 {
+  margin-bottom: 25px;
+  color: #264653;
+  font-size: 1.8rem;
+}
+.login-container input {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 20px;
+  border-radius: 12px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+  transition: 0.3s;
+}
+.login-container input:focus {
+  border-color: #3ec4b5;
+  box-shadow: 0 0 5px #3ec4b5;
+}
+.login-container button, .login-container a {
+  display: block;
+  width: 100%;
+  background-color: #2a9d8f;
+  color: white;
+  padding: 12px;
+  border: none;
+  border-radius: 10px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+  text-decoration: none;
+}
+.login-container button:hover, .login-container a:hover {
+  background-color: #21867a;
+  transform: scale(1.02);
+}
+
+
+
+/* ------------------ TABLAS ------------------ */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #fff;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+}
+th {
+  background-color: #2a9d8f;
+  color: white;
+  padding: 12px;
+}
+td {
+  padding: 12px;
+  border-bottom: 1px solid #eee;
+  text-align: center;
+}
+
+/* ------------------ IMÁGENES ------------------ */
+img {
+  max-width: 100%;
+  border-radius: 12px;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.05);
+}
+
+
+/* ------------------ DASHBOARD MÉDICO VETERINARIO ------------------ */
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+  margin-top: 20px;
+}
+
+.card {
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 30px 20px;
+  text-align: center;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-decoration: none;
+  color: #264653;
+}
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+}
+.card i {
+  font-size: 2.5rem;
+  color: #2a9d8f;
+  margin-bottom: 15px;
+}
+.card h3 {
+  font-size: 1.4rem;
+  margin-bottom: 10px;
+}
+.card p {
+  font-size: 0.95rem;
+  color: #555;
+}
+/* ------------------ PIE DE PÁGINA ------------------ */
+footer {
+  background-color: #264653;
+  color: white;
+  text-align: center;
+  padding: 20px 10px;
+  margin-top: 40px;
+}
+/* footer a {
+  color: #e9c46a;
+  margin: 0 10px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+footer a:hover {
+  color: white;
+} */
+
+/* ------------------ RESPONSIVO ------------------ */
+@media (max-width: 768px) {
+  nav {
+    flex-direction: column;
+    align-items: center;
+  }
+  main, section {
+    padding: 20px;
+    margin: 20px;
+  }
+  .login-container {
+    margin: 30px 15px;
+  }
+}
+
+/* ------------------ ESTILO MASCOTAS ------------------ */
+#info-mascota img {
+      max-width: 200px;
+      border-radius: 16px;
+      margin: 20px auto;
+      display: block;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 20px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    }
+    th, td {
+      padding: 12px;
+      border: 1px solid #ddd;
+      text-align: left;
+    }
+    th {
+      background-color: #2a9d8f;
+      color: white;
+    }
+    .descargar {
+      display: inline-block;
+      padding: 8px 14px;
+      background-color: #e63946;
+      color: white;
+      border-radius: 8px;
+      text-decoration: none;
+      transition: background 0.3s ease;
+    }
+    .descargar:hover {
+      background-color: #d62839;
+    }
+
+/* ------------------ AGENDAR CITAS ------------------ */    
+    .acciones {
+      display: flex;
+      gap: 12px;
+      margin-top: 20px;
+    }
+    .acciones a {
+      display: inline-block;
+      padding: 10px 16px;
+      background-color: #2a9d8f;
+      color: white;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: 600;
+      transition: background 0.3s ease;
+    }
+    .acciones a:hover {
+      background-color: #21867a;
+    }
+
+.card {
+      background: white;
+      padding: 30px;
+      border-radius: 16px;
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.06);
+      max-width: 700px;
+      margin: 40px auto;
+    }
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+    input, select {
+      padding: 10px;
+      border-radius: 8px;
+      border: 1px solid #ccc;
+      font-size: 1rem;
+    }
+    button {
+      background-color: #2a9d8f;
+      color: white;
+      padding: 10px;
+      border: none;
+      border-radius: 8px;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+    button:hover {
+      background-color: #21867a;
+    }
+    table {
+      width: 100%;
+      margin-top: 30px;
+      border-collapse: collapse;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+    }
+    th, td {
+      padding: 12px;
+      border: 1px solid #ddd;
+      text-align: center;
+    }
+    th {
+      background-color: #2a9d8f;
+      color: white;
+    }
+/* ------------------ INVENTARIO ------------------ */
+card {
+      background: white;
+      padding: 30px;
+      border-radius: 16px;
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.06);
+      max-width: 900px;
+      margin: 40px auto;
+    }
+    form {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 16px;
+    }
+    input {
+      padding: 10px;
+      border-radius: 8px;
+      border: 1px solid #ccc;
+      font-size: 1rem;
+      flex: 1 1 30%;
+    }
+    button {
+      background-color: #2a9d8f;
+      color: white;
+      padding: 10px;
+      border: none;
+      border-radius: 8px;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+    button:hover {
+      background-color: #21867a;
+    }
+    table {
+      width: 100%;
+      margin-top: 30px;
+      border-collapse: collapse;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+    }
+    th, td {
+      padding: 12px;
+      border: 1px solid #ddd;
+      text-align: center;
+    }
+    th {
+      background-color: #2a9d8f;
+      color: white;
+    }
+    .acciones button {
+      margin: 0 4px;
+      background-color: #f4a261;
+    }
+    .acciones button:hover {
+      background-color: #e76f51;
+    }

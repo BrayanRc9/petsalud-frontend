@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>Inventario - PetSalud</title>
+  <link rel="stylesheet" href="/frontend/css/styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <header>
+      <a href="index.html">
+        <img src="IMG/1PETSALUD-LOGO.png" alt="PetSalud" height="60">
+      </a>
+      <h2>Gestión de Inventario Médico</h2>
+      <p>Registra, visualiza y administra el stock de insumos médicos.</p>
+    </header>
+
+ <main>
+    <div class="card">
+      <h3>Registrar nuevo insumo</h3>
+      <form id="form-insumo">
+        <input type="text" id="nombre" placeholder="Nombre del insumo" required>
+        <input type="number" id="cantidad" placeholder="Cantidad" min="1" required>
+        <input type="text" id="unidad" placeholder="Unidad (ml, tabletas...)" required>
+        <button type="submit">Agregar</button>
+      </form>
+    </div>
+
+    <div class="card">
+      <h3>Listado de Insumos</h3>
+      <table>
+        <thead>
+          <tr>
+            <th>Nombre</th>
+            <th>Cantidad</th>
+            <th>Unidad</th>
+            <th>Acciones</th>
+          </tr>
+        </thead>
+        <tbody id="tabla-inventario">
+          <!-- Datos dinámicos -->
+        </tbody>
+      </table>
+    </div>
+  </main>
+  <script defer src="js/auth.js"></script>
+
+  <footer>
+    <footer>
+        <p>&copy; 2025. Todos los derechos reservados. <strong>Gustavo Duarte - Brayan Ruano</strong></p>        
+    </footer>
+</body>
+</html>
